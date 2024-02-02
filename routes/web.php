@@ -2,6 +2,8 @@
 
  use Illuminate\Support\Facades\Route;
  use App\Http\Controllers\Guest\MovieController as GuestMovieController;
+ use App\Http\Controllers\Guest\NewsController as GuestNewsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,4 @@ Route::get('/', function () {
 
 
 Route::get('/movies', [GuestMovieController::class, 'index']);
+Route::get('/news', [GuestNewsController::class, 'index']);
